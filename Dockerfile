@@ -52,9 +52,9 @@ RUN sed -i '/imklog/ s/^/#/' /etc/rsyslog.conf
 
 RUN git config --global url."https://github.com".insteadOf git://github.com
 
-RUN python3 -m pip install setuptools==69.1.1
-RUN python3 -m pip install pip==24.0
-RUN python3 -m pip install wheel==0.42.0
+RUN python3 -m pip install setuptools==75.6.0
+RUN python3 -m pip install pip==24.3.1
+RUN python3 -m pip install wheel==0.46.3
 
 RUN python3 -m pip install https://github.com/kytos-ng/python-openflow/archive/${branch_python_openflow}.zip \
  && python3 -m pip install https://github.com/kytos-ng/kytos-utils/archive/${branch_kytos_utils}.zip \
